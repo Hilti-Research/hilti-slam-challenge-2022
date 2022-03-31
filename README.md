@@ -1,5 +1,7 @@
 # Hilti-SLAM-Challenge-2022
 
+Visit the Hilti SLAM Challenge [homepage](https://hilti-challenge.com/) for more information.
+
 # FAQ
 
 ## If we submit the result, are you going to disclose the name of all the participants?
