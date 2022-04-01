@@ -9,3 +9,7 @@ We disclose the names only after prior approval. Before making the leaderboard p
 
 ## How are the results scored?
 The submission will be ranked based on the completeness of the trajectory as well as on the position accuracy (ATE). The score is based on the ATE of individual points on the trajectory. Depending on the error between 10 and 0 points are added to your final score. This way also incomplete trajectories can be included in the evaluation. You always can submit your current results and receive an accuracy report using our [submission system](https://submit.hilti-challenge.com/). 
+
+
+## We noticed that the timestamp for every point in a lidar point cloud scan is equal. Is it possible to correct this issue?
+The Hesai ros driver stores the timestamp in this [struct](https://github.com/HesaiTechnology/HesaiLidar_General_ROS/blob/master/src/HesaiLidar_General_SDK/src/PandarGeneralRaw/include/pandarGeneral/point_types.h). What happens is the sensor_msgs/PointCloud2 Message has a "data" member in byte and it stores the PointXYZIT defined time, xyz, etc. The "field" member describes what type of info is in "data". In a programme, one would convert the PointCloud2 msg into PointXYZIT msg to access all the element pandar records. 
