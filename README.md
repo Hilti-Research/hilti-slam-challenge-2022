@@ -1,5 +1,7 @@
 # Hilti-SLAM-Challenge-2022
 
+![HSC2022](HSC2022.jpg?raw=true)
+
 Visit the Hilti SLAM Challenge [homepage](https://hilti-challenge.com/) for more information.
 
 # FAQ
