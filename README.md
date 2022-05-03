@@ -6,6 +6,9 @@ Visit the Hilti SLAM Challenge [homepage](https://hilti-challenge.com/) for more
 
 # FAQ
 
+## Which datasets should be submitted for the challenge?
+The more datasets you submit the more points you can get. The datasets where we provide the groundtruth are not considered in the score.
+
 ## If we submit the result, are you going to disclose the name of all the participants?
 We disclose the names only after prior approval. Before making the leaderboard public I will send out an email to all participants with their respective rank and the option to withdraw.
 
