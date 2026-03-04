@@ -1,0 +1,8 @@
+evo
+numpy
+pandas
+tqdm
+matplotlib
+scipy
+pillow
+dataframe_image
