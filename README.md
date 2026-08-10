@@ -1,6 +1,6 @@
 # Hilti-SLAM-Challenge-2022
 [<img src="https://img.shields.io/badge/Home_Page-red" alt="Home Page">](https://hilti-challenge.com/dataset-2022)
-[<img src="https://img.shields.io/badge/🤗%20Hugging%20Face-Dataset-yellow" alt="Hugging Face Dataset">](https://huggingface.co/datasets/Hilti-Research/hilti-slam-challenge-2022)
+[<img src="https://img.shields.io/badge/🤗%20Hugging%20Face-Dataset-yellow" alt="Hugging Face Dataset">](https://huggingface.co/datasets/Hilti-Research/slam-challenge-2022)
 [<img src="https://img.shields.io/badge/arXiv-2208.09825-b31b1b" alt="arXiv">](https://arxiv.org/abs/2208.09825)
 
 ![HSC2022](doc/HSC2022.jpg?raw=true)
