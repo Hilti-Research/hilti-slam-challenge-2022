@@ -46,8 +46,8 @@ git clone https://github.com/Hilti-Research/alphasense_description.git
 cd ..
 catkin build phasma_description
 ```
----
-Citation
+
+## Citation
 ```bibtex
 @article{zhang2023hilti,
   author  = {Lintong Zhang and Michael Helmberger and Lanke Frank Tarimo Fu and David Wisth and Marco Camurri and Davide Scaramuzza and Maurice Fallon},
