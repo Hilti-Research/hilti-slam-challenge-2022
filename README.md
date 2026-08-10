@@ -1,8 +1,10 @@
 # Hilti-SLAM-Challenge-2022
+[<img src="https://img.shields.io/badge/Home_Page-red" alt="Home Page">](https://hilti-challenge.com/dataset-2022)
+[<img src="https://img.shields.io/badge/🤗%20Hugging%20Face-Dataset-yellow" alt="Hugging Face Dataset">](https://huggingface.co/datasets/Hilti-Research/hilti-slam-challenge-2022)
+[<img src="https://img.shields.io/badge/arXiv-2208.09825-b31b1b" alt="arXiv">](https://arxiv.org/abs/2208.09825)
 
 ![HSC2022](doc/HSC2022.jpg?raw=true)
 
-Visit the Hilti SLAM Challenge [homepage](https://hilti-challenge.com/) for more information.
 
 # FAQ
 
@@ -16,7 +18,7 @@ We disclose the names only after prior approval. Before making the leaderboard p
 The submission will be ranked based on the completeness of the trajectory as well as on the position accuracy (ATE). The score is based on the ATE of individual points on the trajectory. Depending on the error between 10 and 0 points are added to your final score. This way also incomplete trajectories can be included in the evaluation. You always can submit your current results and receive an accuracy report using our [submission system](https://submit.hilti-challenge.com/). 
 
 ## Is the ground truth available?
-We provide ground truth for selected datasets. Please use our [submission system](https://submit.hilti-challenge.com/) to test your algorithm. We will also provide high-accuracy laserscans for selected datasets after the challenge.
+We provide ground truth for all sequences. We also provide high-accuracy laserscans for selected datasets.
 
 ## We noticed that the timestamp for every point in a lidar point cloud scan is equal. Is it possible to correct this issue?
 The Hesai ros driver stores the timestamp in this [struct](https://github.com/HesaiTechnology/HesaiLidar_General_ROS/blob/master/src/HesaiLidar_General_SDK/src/PandarGeneralRaw/include/pandarGeneral/point_types.h). What happens is the `sensor_msgs/PointCloud2` Message has a "data" member in byte and it stores the `PointXYZIT` defined time, xyz, etc. The "field" member describes what type of info is in "data". In a programme, one would convert the `PointCloud2` msg into `PointXYZIT` msg to access all the element pandar records. 
@@ -44,4 +46,17 @@ git clone https://github.com/Hilti-Research/alphasense_description.git
 cd ..
 catkin build phasma_description
 ```
-
+---
+Citation
+```bibtex
+@article{zhang2023hilti,
+  author  = {Lintong Zhang and Michael Helmberger and Lanke Frank Tarimo Fu and David Wisth and Marco Camurri and Davide Scaramuzza and Maurice Fallon},
+  title   = {Hilti-Oxford Dataset: A Millimeter-Accurate Benchmark for Simultaneous Localization and Mapping},
+  journal = {IEEE Robotics and Automation Letters},
+  volume  = {8},
+  number  = {1},
+  pages   = {408--415},
+  year    = {2023},
+  doi     = {10.1109/LRA.2022.3226077}
+}
+```
